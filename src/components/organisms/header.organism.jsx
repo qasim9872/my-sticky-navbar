@@ -4,9 +4,9 @@ import tw, { styled } from 'twin.macro'
 import { Logo } from '../atoms/logo'
 
 const Nav = styled.nav(({ sticky }) => [
-  tw`transition-all`,
-  tw`bg-red-100 flex items-center justify-between px-4 py-2 left-0 top-0 w-full absolute z-10`,
-  sticky && tw`fixed shadow-lg animate-move-down-anim`,
+  tw`transition-all bg-transparent text-white`,
+  tw`flex items-center justify-between px-4 py-2 left-0 top-0 w-full absolute z-10`,
+  sticky && tw`bg-white text-black fixed shadow-lg animate-move-down-anim`,
 ])
 const NavLogoHolder = tw.div`flex items-center justify-center`
 
